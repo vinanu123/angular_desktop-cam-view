@@ -19,11 +19,7 @@ export class AppComponent {
   }
   showcam() {
     this.isshow = true;
-    var  navigator = <any>navigator;
-     navigator.getUserMedia = (navigator.getUserMedia ||
-                                  navigator.webkitGetUserMedia ||
-                                  navigator.mozGetUserMedia || 
-                                  navigator.msGetUserMedia);
+
   }
 
 
