@@ -14,22 +14,35 @@
 
   <label class="btn btn-primary">
     <input type="file" accept="image/*" capture="environment" />
-    Camera for native mobile <span class="glyphicon glyphicon-camera"></span>
+    Camera for mobile <span class="glyphicon glyphicon-camera"></span>
   </label>
+
   <label class="btn btn-primary">
     <input type="file"  capture="environment" />
     File <span class="glyphicon glyphicon-file"></span>
   </label>
+
   <div style="background-color:rgb(207, 222, 240)">
     <input type="file" name="file">
   </div>
-  <label class="btn btn-primary" (click)="showcam()">
 
+  <label class="btn btn-primary" (click)="showcam()">
    Camera for desktop <span class="glyphicon glyphicon-camera"></span>
   </label>
-
   <webcam [hidden]="!isshow"></webcam>
 
+  <label class="btn btn-primary" id="getPositionBtn" (click)="getNote()">
+   Notification  <span class="glyphicon glyphicon-bell"></span>
+  </label>
+
+  <label class="btn btn-primary" id="getPositionBtn" (click)="getLocation()">
+    Geolocation  <span class="glyphicon glyphicon-map-marker"></span>
+  </label>
+
+  <label class="btn btn-primary" id="getPositionBtn" (click)="getCamera()">
+     Camera  <span class="glyphicon glyphicon-camera"></span>
+  </label>
+  
   <div class="footer">
     Virtusa
   </div>
